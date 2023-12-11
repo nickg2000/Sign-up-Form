@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'American Captain';
+    src: url('american-captain-font/AmericanCaptain-MdEy.otf') format('truetype');
+
+}
+
+body {
+    font-family: 'American Captain', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: url('wallpaper.jpg') left top;
+    background-size: cover; 
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin-left: auto; /* Center the container */
+}
+
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.right-section {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 3vw; /* Adjust padding with relative units */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 120%; /* Adjust maximum width */
+    display: flex;
+    flex-direction: column;
+    height: 95vh; /* Adjust height */
+    width: 120%; /* Adjust width */
+    margin: auto; /* Center the container horizontally */
+}
+
+.form-row,
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center the items horizontally */
+    margin-top: 20px; /* Add margin at the top to move the form down */
+}
+
+.button-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title-row {
+    margin-bottom: 20px; /* Add space between title and form rows */
+    display: flex;
+    align-items: left; /* Center vertically */
+    justify-content: left; /* Center horizontally */
+    height: 100px; /* Adjust the height */
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.form-row,
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.label-input-group {
+    width: 38%; 
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.label-input-group input {
+    height: 40px; 
+  }
+
+@media (max-width: 768px) {
+    .label-input-group {
+        width: 100%; 
+    }
+}
+
+.label-input-group:last-child {
+    margin-bottom: 0;
+}
+
+label,
+input {
+    width: 100%;
+}
+
+
+input.error {
+    border-color: #ff0000; 
+}
+
+button {
+    background-color: #699e3b;
+    color: #fff;
+    padding: 1vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #31692b;
+}
+
+.logo {
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    transform: translate(-45%, -50%);
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 4.5vw;
+    font-family: 'American Captain', sans-serif;
+    z-index: 2;
+}
+
+
+.logo img {
+    width: 5vw; 
+    margin-right: 1vw; 
+}
+
+.logo h1 {
+    margin: 0; 
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    left: -33%;
+    width: 197.5%;
+    height: 110%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .label-input-group {
+        width: 100%;
+    }
+
+    .logo::before {
+        width: 140%;
+    }
+}
+
+@media (max-width: 480px) {
+    .label-input-group {
+        width: 100%;
+    }
+
+    .logo::before {
+        width: 160%;
+    }
+}
+
+.link {
+    position: absolute;
+    top: 98%;
+    left: 13%;
+    transform: translate(-45%, -50%);
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 0.5vw;
+    font-family: 'Arial';
+    z-index: 2;
+}
